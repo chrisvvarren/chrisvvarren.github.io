@@ -1,8 +1,8 @@
 :root {
-  --spacing: 2rem;
+  --spacing: 3rem;
   --color-white: #fff;
-  --color-black: #120c25;
-  --color-accent: #ee00aa;
+  --color-black: #000000; \\#120c25;
+  --color-accent: #cc002b; \\ee00aa
   --max-width: 768px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 #app {
-  font-family: "Plex Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 125%;
   line-height: 1.5;
   font-weight: normal;
