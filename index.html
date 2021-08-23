@@ -23,15 +23,25 @@
       <section class="intro">
         <p>
           <strong>Intro Text → </strong>
-          This is a demo for creating a scrollytelling site for Introduction to Digital Humanties.  The code is adapted from the excellent tutorial created by UC-Lab Potsdam (https://github.com/uclab-potsdam/scrollytelling-beginners).
+          This is a demo for creating a scrollytelling site for Introduction to Digital Humanties.  The code is adapted <strong>by Gabriel Warren </strong> from the excellent tutorial created by UC-Lab Potsdam (https://github.com/uclab-potsdam/scrollytelling-beginners).
         </p>
+        <div>
+          <p>
+            <strong>Edited By</strong>
+            Gabriel Warren
+          </p>
+        </div>
       </section>
 
       <section class="scrolly">
         <figure ref="figure">
+          <img v-if="step === 0" src="./assets/images/48749685083_e092b42a5d_k.jpg" />
+          <img v-if="step === 1" src="./assets/images/48749775553_73548f7c4e_k.jpg" />
+          <img v-if="step === 2" src="./assets/images/48749911306_d1a752f381_k.jpg" />
+          <img v-if="step === 3" src="./assets/images/48750103681_01c6993e68_k.jpg" />
+          <img v-if="step === 4" src="./assets/images/48749947446_5a3b6e5467_k.jpg" />                    
           <svg :width="width" :height="height">
-            <rect class="bg" :width="width * progress" :height="height" />
-            <text class="step" :y="height / 2" dy="0.35em" :x="width / 2">{{ step }}</text>
+<!--            <text class="step" :y="height / 2" dy="0.35em" :x="width / 2">{{ step }}</text> -->
           </svg>
         </figure>
         <article>
@@ -62,10 +72,12 @@
         </article>
       </section>
       <section class="outro">
-        <p>
-          <strong>Outro → </strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, sapien vel efficitur lacinia, felis erat varius risus, sed molestie risus augue in tellus. Duis nibh purus, aliquet vitae gravida porttitor, consectetur vitae est. Quisque porttitor tincidunt urna, in facilisis ipsum facilisis at. Ut id lectus non erat commodo accumsan eu id quam. Fusce purus diam, tempus non orci non, vehicula rhoncus felis. Suspendisse id nisl imperdiet, aliquam ligula et, venenatis augue. Vivamus at eros id dui auctor imperdiet. Ut in enim in turpis lobortis commodo vel nec lorem.
-        </p>
+        <div style = "position:relative; left:0px; top:40px;">
+          <p>
+            <strong>Outro → </strong>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, sapien vel efficitur lacinia, felis erat varius risus, sed molestie risus augue in tellus. Duis nibh purus, aliquet vitae gravida porttitor, consectetur vitae est. Quisque porttitor tincidunt urna, in facilisis ipsum facilisis at. Ut id lectus non erat commodo accumsan eu id quam. Fusce purus diam, tempus non orci non, vehicula rhoncus felis. Suspendisse id nisl imperdiet, aliquam ligula et, venenatis augue. Vivamus at eros id dui auctor imperdiet. Ut in enim in turpis lobortis commodo vel nec lorem.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
