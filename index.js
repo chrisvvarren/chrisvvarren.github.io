@@ -3,8 +3,8 @@ const app = new Vue({
   el: '#app',
   data: {
     scroller: scrollama(),
-    width: 600,
-    height: 400,
+    width: 500,
+    height: 300,
     step: 0,
     progress: 0
   },
