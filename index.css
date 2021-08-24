@@ -155,3 +155,7 @@ svg text.step {
 .fade-leave-to {
   opacity: 0;
 }
+
+figure img {
+  width: 120%;
+}
