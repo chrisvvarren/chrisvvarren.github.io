@@ -69,6 +69,7 @@ section {
 
 section.scrolly {
   padding: var(--spacing) 0 0 0;
+  position:relative; left:-100px; top:0px;
 }
 
 .outro {
